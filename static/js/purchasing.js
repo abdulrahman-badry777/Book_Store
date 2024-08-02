@@ -16,7 +16,6 @@ async function cartdetails() {
 
     // Calculate total price after fetching all details
     let tPrice = await calculateTotalPrice(str);
-    // console.log('Total Price:', tPrice);
     return tPrice;
 }
 
@@ -38,11 +37,9 @@ async function DelAllCart() {
     });
     const data = await response.json();
     if (response.ok) {
-        console.log("data.message cart deleted"); // رسالة النجاح
-        // يمكنك إضافة كود هنا لتحديث الواجهة بعد الحذف
+        console.log("data.message cart deleted"); 
     } else {
-        console.error('Error:', data.error); // رسالة الخطأ
-        // يمكنك إضافة كود هنا لعرض رسالة خطأ للمستخدم
+        console.error('Error:', data.error); 
     }
 
 }
@@ -87,28 +84,12 @@ async function loop(arrs) {
         const data = await response.json();
         if (response.ok) {
             console.log('Order detail added:', data);
-            // يمكنك إضافة كود هنا لتحديث الواجهة أو عرض رسالة للمستخدم
         } else {
             console.error('Error:', data.error);
-            // يمكنك إضافة كود هنا لعرض رسالة خطأ للمستخدم
         }
     }
 }
-// cartdetails().then(t=>{
-//     fetch('/add_order', {
-//             method: 'POST',
-//             headers: {
-//                 'Content-Type': 'application/json'
-//             },
-//             body: JSON.stringify({
-//                 user_id: window.localStorage.getItem("userid"),
-//                 total_price: t
-//             })
-//         }).then(response => response.json())
-//         .then(data => {
-//             console.log(data);
-//         })
-// })
+
 // Payment 
 var stripe = Stripe('pk_test_51PiAPE2K0ifXcFmugE1zPidjIqMKCj2eTS0dExGIrRBOTChSPXyXRYfnS9BxEtDlitPfNiXjqB7hS62TKxTUvvYu00Zxr39tJ1');
 var elements = stripe.elements();
@@ -141,12 +122,10 @@ var form = document.getElementById('payment-form');form.addEventListener('submit
     event.preventDefault();
     
     try {
-        // إنشاء رمز Stripe
         const { token, error } = await stripe.createToken(card);
         if (error) {
             document.getElementById('card-errors').textContent = error.message;
         } else {
-            // الحصول على تفاصيل السلة
             const totalPrice = await cartdetails();
             if(totalPrice!=0) {
                 const response = await fetch('/add_order', {
@@ -199,4 +178,3 @@ var form = document.getElementById('payment-form');form.addEventListener('submit
     form.appendChild(hiddenInput);
     form.submit();
 }
-// 
