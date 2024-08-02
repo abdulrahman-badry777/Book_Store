@@ -29,8 +29,15 @@ Welcome to the Book Store App! This application is designed to provide a seamles
 - **Backend**: Flask (Python)
 - **Database**: MariaDB
 
-## Installation and Setup 🧑‍💻
-
-1. **Clone the repository**:
-   ```bash
-   git clone <repository-url>
+  ## Folder Structure 📂
+/static: Contains static files (CSS, JavaScript, images).
+/templates: Contains HTML templates.
+/app: Contains the Flask application code, including routes, models, and forms.
+## Usage 🚀
+Sign Up/Login: Access the sign-up and login pages to create an account or log in.
+Search/Browse: Use the search bar or browse categories to find books.
+View Book: Click on a book to view its details.
+Cart Management: Add or remove books from your cart.
+Checkout: Proceed to checkout to purchase the books in your cart.
+## Contributing 🤝
+We welcome contributions! Please fork the repository and submit a pull request for any features, bug fixes, or enhancements.
