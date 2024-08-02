@@ -1,0 +1,56 @@
+
+body
+{
+    font-family: "Montserrat", sans-serif;
+    background-color: #1f2937;
+    color: white;
+    margin: 0;
+}
+.cart-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin: 20px;
+}
+
+.cart-item {
+    background-color: #2d3748;
+    /* border: 1px solid #555; */
+    padding: 15px;
+    margin: 10px;
+    width: 300px;
+    border-radius: 10px;
+}
+.zero {
+    font-size: 35px;
+    text-transform: capitalize;
+}
+.cart-item h3 {
+    margin-top: 0;
+}
+.cart-container  .cart-item button {
+    background-color: #E91E63;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 10px;
+}
+.colored-popup {
+    background-color: #1A2A39!important; 
+    color: #FFFFFF !important; 
+}
+
+.colored-popup .swal2-title,
+.colored-popup .swal2-content {
+    color: #FFFFFF !important; 
+}
+
+.colored-popup .swal2-success-ring {
+    border-color: rgba(135, 196, 253, 0.1) !important; 
+}

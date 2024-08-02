@@ -1,0 +1,92 @@
+/* تنسيق النموذج */
+body {
+    
+    font-family: "Montserrat", sans-serif;
+    width: 1440px;
+    /* height: 1024px; */
+    background-color: #1A2A39;
+}
+#payment-form {
+    min-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.container h2 {
+    position:absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+}
+/* تنسيق عنصر بطاقة Stripe */
+#card-element {
+    margin-bottom: 15px;
+}
+
+/* تنسيق الأخطاء */
+#card-errors {
+    color: #fa755a;
+    font-size: 0.875em;
+    margin-top: 10px;
+}
+
+/* تنسيق الأزرار */
+button.btn-primary {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* تنسيق الحقول المعروضة */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group span {
+    display: block;
+    padding: 10px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+}
+.cart-item {
+    background-color: #2d3748;
+    /* border: 1px solid #555; */
+    padding: 15px;
+    margin: 10px;
+    width: 300px;
+    border-radius: 10px;
+}
+.colored-popup {
+    background-color: #1A2A39!important; 
+    color: #FFFFFF !important; 
+}
+
+.colored-popup .swal2-title,
+.colored-popup .swal2-content {
+    color: #FFFFFF !important; 
+}
+
+.colored-popup .swal2-success-ring {
+    border-color: rgba(135, 196, 253, 0.1) !important; 
+}

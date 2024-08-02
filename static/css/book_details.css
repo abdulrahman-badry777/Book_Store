@@ -1,0 +1,69 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #1f2937;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+.book-details {
+    background-color: #2d3748;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 800px;
+    text-align: center;
+}
+.book-details img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.book-details h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+.book-details p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+.book-details .actions {
+    margin-top: 20px;
+}
+.book-details .actions input {
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    width: 60px;
+    text-align: center;
+}
+.book-details .actions button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+.book-details .actions button:hover {
+    background-color: #45a049;
+}
+.colored-popup {
+    background-color: #1A2A39!important; 
+    color: #FFFFFF !important; 
+}
+
+.colored-popup .swal2-title,
+.colored-popup .swal2-content {
+    color: #FFFFFF !important; 
+}
+
+.colored-popup .swal2-success-ring {
+    border-color: rgba(135, 196, 253, 0.1) !important; 
+}

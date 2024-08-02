@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block body %}
+    <div class="box">
+        <div class="heading">
+            <h2>Welcome To Zenith</h2>
+            <p>Register to Zenith</p>
+        </div>
+        <form action="" method="post">
+            <div class="name">
+                <div class="f_name">
+                    <label for="">First Name</label>
+                    <input type="text" name="first_name" id="first_name">
+                </div>
+                <div class="l_name">
+                    <label for="">Last Name</label>
+                    <input type="text" name="last_name" id="last_name">    
+                </div>
+            </div>
+            <label for="">Email</label>
+            <input type="text" name="email" id="email">
+            <label for="">Set a password</label>
+            <input type="password" name="password" id="password">
+            <label for="">Confirm a password</label>
+            <input type="password" name="confirmpassword" id="confirmpassword">
+            <button type="submit">register</button>
+        </form>
+    </div>
+    <script src="../static/js/sign_up.js"></script>
+{% endblock %}
