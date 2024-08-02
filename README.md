@@ -30,9 +30,9 @@ Welcome to the Book Store App! This application is designed to provide a seamles
 - **Database**: MariaDB
 
   ## Folder Structure 📂
-/static: Contains static files (CSS, JavaScript, images).
-/templates: Contains HTML templates.
-/app: Contains the Flask application code, including routes, models, and forms.
+- **/static**: Contains static files (CSS, JavaScript, images).
+- **/templates**: Contains HTML templates.
+-  - **/app**: Contains the Flask application code, including routes, models, and forms.
 ## Usage 🚀
 Sign Up/Login: Access the sign-up and login pages to create an account or log in.
 Search/Browse: Use the search bar or browse categories to find books.
